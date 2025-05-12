@@ -82,3 +82,9 @@ p {
   background: var(--secondary-color);
   color: var(--text-hover-color);
 }
+
+@media (max-width: 385px) {
+  .profile-card {
+    min-width: 300px;
+  }
+}
