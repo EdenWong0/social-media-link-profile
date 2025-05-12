@@ -1,0 +1,84 @@
+:root {
+  --text-main-color: #ececec;
+  --text-sec-color: #c5c5c5;
+  --primary-color: #000;
+  --secondary-color: #c4f82a;
+  --text-hover-color: #333333;
+
+  --card-background: #1f1f1f;
+  --social-link-background: #333333;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 700;
+}
+h1 {
+  font-size: 28px;
+  color: var(--text-main-color);
+}
+h2 {
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+p {
+  font-size: 14px;
+  color: var(--text-main-color);
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  background: var(--card-background);
+  padding: 1em 2em;
+  border-radius: 1em;
+  text-align: center;
+  margin: 0 auto;
+  min-width: 380px;
+}
+.profile-avatar {
+  margin: 1em 0;
+}
+.profile-avatar img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.profile-info h2 {
+  margin-bottom: 1em;
+}
+.profile-info p {
+  margin: 2em 0;
+  color: var(--text-sec-color);
+}
+
+.profile-social-link p {
+  margin-bottom: 1.5em;
+  background: var(--social-link-background);
+  border-radius: 8px;
+  padding: 1em 0;
+  cursor: pointer;
+}
+
+.profile-social-link p:hover {
+  background: var(--secondary-color);
+  color: var(--text-hover-color);
+}
