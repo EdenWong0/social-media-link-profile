@@ -69,16 +69,20 @@ p {
   margin: 2em 0;
   color: var(--text-sec-color);
 }
-
-.profile-social-link p {
+.profile-social-link {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.profile-social-link a {
   margin-bottom: 1.5em;
   background: var(--social-link-background);
   border-radius: 8px;
   padding: 1em 0;
-  cursor: pointer;
+  color: var(--text-main-color);
+  text-decoration: none;
 }
 
-.profile-social-link p:hover {
+.profile-social-link a:hover {
   background: var(--secondary-color);
   color: var(--text-hover-color);
 }
